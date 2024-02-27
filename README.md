@@ -1,43 +1,47 @@
-# Ex.No: 04 COMPUTE THE AUTO FUNCTION(ACF)
-Date: 
+# Ex.No:04   FIT ARMA MODEL FOR TIME SERIES
+# Date: 
+
+
 
 ### AIM:
-To Compute the AutoCorrelation Function (ACF) of the data for the first 35 lags to determine the model
-type to fit the data.
+To implement ARMA model in python.
 ### ALGORITHM:
-1. Import the necessary packages
-2. Find the mean, variance and then implement normalization for the data.
-3. Implement the correlation using necessary logic and obtain the results
-4. Store the results in an array
-5. Represent the result in graphical representation as given below.
+1. Import necessary libraries.
+2. Set up matplotlib settings for figure size.
+3. Define an ARMA(1,1) process with coefficients ar1 and ma1, and generate a sample of 1000
+
+data points using the ArmaProcess class. Plot the generated time series and set the title and x-
+axis limits.
+
+4. Display the autocorrelation and partial autocorrelation plots for the ARMA(1,1) process using
+plot_acf and plot_pacf.
+5. Define an ARMA(2,2) process with coefficients ar2 and ma2, and generate a sample of 10000
+
+data points using the ArmaProcess class. Plot the generated time series and set the title and x-
+axis limits.
+
+6. Display the autocorrelation and partial autocorrelation plots for the ARMA(2,2) process using
+plot_acf and plot_pacf.
 ### PROGRAM:
-import matplotlib.pyplot as plt
 
-import numpy as np
-
-data = [3, 16, 156, 47, 246, 176, 233, 140, 130,
-101, 166, 201, 200, 116, 118, 247,
-209, 52, 153, 232, 128, 27, 192, 168, 208,
-187, 228, 86, 30, 151, 18, 254,
-76, 112, 67, 244, 179, 150, 89, 49, 83, 147, 90,
-33, 6, 158, 80, 35, 186, 127]
-
-lags = range(35)
+OUTPUT:
+SIMULATED ARMA(1,1) PROCESS:
 
 
-#Pre-allocate autocorrelation table
 
-#Mean
+Partial Autocorrelation
 
-#Variance
+Autocorrelation
 
-#Normalized data
 
-#Go through lag components one-by-one
 
-#display the graph
+SIMULATED ARMA(2,2) PROCESS:
 
-### OUTPUT:
+Partial Autocorrelation
 
-### RESULT:
-        Thus we have successfully implemented the auto correlation function in python.
+
+
+Autocorrelation
+
+RESULT:
+Thus, a python program is created to fir ARMA Model successfully.
